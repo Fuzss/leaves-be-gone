@@ -1,7 +1,7 @@
 package fuzs.leavesbegone.common.helper;
 
 import fuzs.leavesbegone.common.LeavesBeGone;
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
@@ -29,20 +29,18 @@ public final class LeavesDistanceHelper {
             return false;
         } else if (neighborState.is(blockState.getBlock())) {
             return false;
-        } else if (blockState.is(createBlockTag(neighborState.getBlock()))) {
+        } else if (blockState.is(createBlockTag(neighborState.typeHolder()))) {
             return false;
-        } else if (neighborState.is(createBlockTag(blockState.getBlock()))) {
+        } else if (neighborState.is(createBlockTag(blockState.typeHolder()))) {
             return false;
         } else {
             return true;
         }
     }
 
-    public static TagKey<Block> createBlockTag(Block block) {
-        Identifier identifier = BuiltInRegistries.BLOCK.wrapAsHolder(block)
-                .unwrapKey()
-                .map(ResourceKey::identifier)
-                .orElseThrow();
-        return TagKey.create(Registries.BLOCK, LeavesBeGone.id(identifier.getNamespace() + "/" + identifier.getPath()));
+    public static TagKey<Block> createBlockTag(Holder<Block> block) {
+        Identifier blockId = block.unwrapKey().map(ResourceKey::identifier).orElseThrow();
+        Identifier tagId = LeavesBeGone.id(blockId.getNamespace() + "/" + blockId.getPath());
+        return TagKey.create(Registries.BLOCK, tagId);
     }
 }

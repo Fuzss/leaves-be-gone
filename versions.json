@@ -6,11 +6,17 @@
     "26.1.x": "maintained",
     "26.2.x": "primary"
   },
-  "properties": {
-    "distributions.curseforge.id": "686435",
-    "distributions.curseforge.slug": "leaves-be-gone",
-    "distributions.github.slug": "leaves-be-gone",
-    "distributions.modrinth.id": "AVq17PqV",
-    "distributions.modrinth.slug": "leaves-be-gone"
+  "distributions": {
+    "curseforge": {
+      "id": "686435",
+      "slug": "leaves-be-gone"
+    },
+    "github": {
+      "slug": "leaves-be-gone"
+    },
+    "modrinth": {
+      "id": "AVq17PqV",
+      "slug": "leaves-be-gone"
+    }
   }
 }

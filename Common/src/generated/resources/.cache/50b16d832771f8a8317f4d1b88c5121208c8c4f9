@@ -1,4 +1,4 @@
-// 26.2	2026-06-18T01:04:24.700433	Tags for minecraft:block mod id vanilla
+// 26.3	2026-09-26T20:08:20.638543	Tags for minecraft:block mod id vanilla
 f5701ea4418d95037be7739e1e8afb927838149f data/leavesbegone/tags/block/minecraft/acacia_leaves.json
 33e91aee8aadac89fdcdfb63a56cf5d7c281c254 data/leavesbegone/tags/block/minecraft/azalea_leaves.json
 f11e06603f3eeabac6b082d747f39d7be059bc67 data/leavesbegone/tags/block/minecraft/birch_leaves.json
@@ -8,5 +8,8 @@ eaf4c5a80a7ef00d056e5cf6788bddb13ce255cb data/leavesbegone/tags/block/minecraft/
 133b58f776322677863aa6a89bae2830a6a07615 data/leavesbegone/tags/block/minecraft/jungle_leaves.json
 d4ccdd52d950205105f63938b548d92c42dd1761 data/leavesbegone/tags/block/minecraft/mangrove_leaves.json
 5badd7956dc26a4f15213d2aea70a2177f4d62da data/leavesbegone/tags/block/minecraft/oak_leaves.json
+2146ed7ee95571a711e6962b09dbaebe52bc1f39 data/leavesbegone/tags/block/minecraft/orange_poplar_leaves.json
 72bdaa3ad16eaf8ae5bf45c6d60b4882342d9db2 data/leavesbegone/tags/block/minecraft/pale_oak_leaves.json
+a731096e2c50b100b3c1819aeb6f24d5a2e3f921 data/leavesbegone/tags/block/minecraft/red_poplar_leaves.json
 1a4ac064f3f6f7bde4b9bdfd0fea5c474f064a04 data/leavesbegone/tags/block/minecraft/spruce_leaves.json
+33eafff58a922a965786bc2878336ffbc3fda565 data/leavesbegone/tags/block/minecraft/yellow_poplar_leaves.json
